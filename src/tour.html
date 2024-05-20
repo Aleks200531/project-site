@@ -27,21 +27,21 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#carouselExampleIndicators">Главная</a>
+            <a class="nav-link" href="index.html">Главная</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="tour.html">Подборка тура</a>
+            <a class="nav-link" href="#tours-plan">Подборка тура</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Мой маршрут</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about-section">
+            <a class="nav-link" href="index.html">
               О нас
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contacts">Контакты</a>
+            <a class="nav-link" href="index.html">Контакты</a>
           </li>
         </ul>
         <div class="header__contacts">
@@ -52,86 +52,64 @@
     </div>
   </nav>
 
-  <div id="carouselExampleIndicators" data-bs-interval="1000" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="content">
-          <h1 class="title">ДОБРО ПОЖАЛОВАТЬ
-            В КОНСТРУКТОР - ТУРОВ</h1>
-          <div class="line"></div>
-          <p class="text">Здесь Вы можете собрать<br>индивидуальный тур для себя по всей<br> Амурской области </p>
-          <a href="tour.html">Создать тур</a>
+  <div id="tours-plan" class="container">
+    <div class="row container__cards">
+      <h3 class="title__tur">Тур-Конструктор</h3>
+      <p class="title_descr">Создай своё путешествие или выбери готовый тур по интересам</p>
+      <div class="card col-3">
+        <img class="card-img-top" src="img/i.webp" alt="...">
+        <div class="card-body">
+          <a href="eksurs2.html" class="card-text"><span>Активности</span><br>
+            музеи, экспедиции и тд...</a>
         </div>
-        <div class="overlay"></div>
-        <img src="img/Triumfalnaya-arka 1.jpg" class="d-block w-100" alt="Фото">
       </div>
 
-      <div class="carousel-item active">
-        <div class="content">
-          <h1 class="title">ДОБРО ПОЖАЛОВАТЬ
-            В КОНСТРУКТОР - ТУРОВ</h1>
-          <div class="line"></div>
-          <p class="text">Здесь Вы можете собрать<br>индивидуальный тур для себя по всей<br> Амурской области </p>
-          <a href="tour.html">Создать тур</a>
+      <div class="card col-3">
+        <img src="img/i (1).webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="card-text"><span>Место размещения</span><br>
+            отели, гостиницы, хостелы</a>
         </div>
-        <div class="overlay"></div>
-        <img src="img/TNIAEXtlUbfAXsRJ1LEJ2474yNM-1920.jpg" class="d-block w-100" alt="Фото">
       </div>
 
-      <div class="carousel-item active">
-        <div class="content">
-          <h1 class="title">ДОБРО ПОЖАЛОВАТЬ
-            В КОНСТРУКТОР - ТУРОВ</h1>
-          <div class="line"></div>
-          <p class="text">Здесь Вы можете собрать<br>индивидуальный тур для себя по всей<br> Амурской области </p>
-          <a href="tour.html">Создать тур</a>
+      <div class="card col-3">
+        <img src="img/i (2).webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="card-text"><span>Питание</span><br>
+            Кафе, рестораны
+          </a>
         </div>
-        <div class="overlay"></div>
-        <img src="img/1640814086_64-krot-info-p-amurskaya-oblast-stolitsa-blagoveshchensk-74.jpg" class="d-block w-100"
-          alt="Фото">
+      </div>
+      <div class="btns_wrap">
+        <a href="eskurs.html" class="tours_btn">Готовые туры по
+          Амурской области</a>
+        <a href="#" class="cart_btn">Перейти к оформлению</a>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <i class="bi bi-arrow-left-circle">
-        <span class="visually-hidden">Предыдущий</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Следующий</span>
-    </button>
   </div>
 
-  <section id="about-section" class="about-section">
-    <div class="container about-section__container">
-      <h2 class="about-section__title title">О нас</h2>
-      <div class="about-section__content-one">
-        <img class="about-section__image" src="img/image 6.png" alt="Изображение">
-        <p class="about-section__text">"Мы - ваш надежный проводник в мире приключений и открытий! С нашим
-          тур-конструктором вы сможете создать свой
-          идеальный маршрут, настроенный под ваши желания и предпочтения. Путешествуйте с комфортом и уверенностью
-          вместе с нами!"</p>
-      </div>
-      <div class="about-section__content-two">
-        <p class="about-section__text"> Почему именно мы ? <br>"Выбирая нас, вы получаете не только качественный сайт,
-          но и
-          опыт и экспертизу команды, готовой поддержать вас на каждом этапе. Наш интуитивно понятный интерфейс и
-          множество функций делают процесс создания туров легким и приятным. Мы стремимся к вашему успеху и готовы
-          помочь вам достичь его!"</p>
-        <img class="about-section__image" src="img/image 7.png" alt="Изображение">
-      </div>
+  <div class="container">
+    <div class="content-text">
+      <p>Незаменимым инструментом для активных туристов является конструктор туров, с помощью которого можно
+        самостоятельно спланировать свое путешествие. Больше не нужно переплачивать за услуги гидов, включать в
+        программу неинтересные обязательные экскурсии и покупать дорогие путеводители. Это поможет вам точно
+        определиться
+        что посмотреть в Амурской области.</p>
+      <h4>Какие возможности дает конструктор?</h4>
+      <p>Многофункциональный конструктор туров онлайн позволяет путешественнику решить все важные задачи по организации
+        отдыха:</p>
+      <ul>
+        <li>выбор места проживания;</li>
+        <li>планирование экскурсионной программы;</li>
+        <li>организация питания;</li>
+        <li>уточнение маршрутов транспорта;</li>
+        <li>бронирование билетов.</li>
+      </ul>
+      <p>Сервис дает возможность быстро уточнить адреса интересующих объектов, а также подходящие для передвижения по
+        городу транспортные маршруты. Главное преимущество инструмента заключается в том, что каждый может собрать тур
+        самостоятельно, с учетом всех интересов, а еще точно спланировать бюджет.</p>
     </div>
-  </section>
-
+  </div>
 
   <footer id="contacts" class="py-5">
     <div class="container">
@@ -176,7 +154,7 @@
           </ul>
         </div>
 
-        <div class=" col-3 col-md-5 offset-md-1 mb-3">
+        <div class="col-3 col-md-5 offset-md-1 mb-3">
           <h3 class="footer__title">Социальные сети</h3>
           <ul class="list-unstyled d-flex">
             <li class="ms-3"><a href="https://m.vk.com/alekseyganzha" target="_blank" class="link-body-emphasis"
@@ -210,5 +188,3 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./js/index.js"></script>
 </body>
-
-</html>

@@ -1,6 +1,425 @@
 @import "normalizes.scss"
 @import "resets.scss"
 
-div
-  h1
-    color: green
+*
+  box-sizing: border-box
+
+@font-face
+  font-family: "Montserrat"
+  src: url('../fonts/Montserrat-Italic.ttf')
+  font-weight: italic
+  font-style: normal
+  font-display: swap
+
+html
+  scroll-behavior: smooth
+  font-family: "Montserrat"
+  font-weight: italic
+
+img
+  object-fit: cover
+
+.header__contacts
+  font-size: 18px
+  line-height: 25px
+  text-align: end
+.header__contact
+  text-decoration: none
+
+.navbar-brand
+  img
+    width: 100px
+
+.carousel-item
+  position: relative
+  img
+    object-fit: cover
+    height: 650px
+
+.content
+  display: flex
+  flex-direction: column
+  position: absolute
+  max-width: 900px
+  left: 15%
+  bottom: 30%
+  z-index: 2
+  color: white
+  a
+    display: inline-block
+    margin: 40px auto
+    background: blue
+    border-radius: 10px
+    padding: 15px
+    color: white
+    text-decoration: none
+
+.nav-link
+  &:hover
+    color: blue
+.overlay
+  position: absolute
+  background: black
+  opacity: 0.4
+  width: 100%
+  height: 100%
+
+.carousel
+  margin-bottom: 30px
+
+.title
+  text-align: center
+  line-height: -20px
+  font-size: 50px
+
+.line
+  width: 100px
+  margin: 20px auto 20px
+  height: 2px
+  background: yellow
+
+.text
+  font-size: 24px
+  text-align: center
+
+.about-section
+  margin-bottom: 40px
+  &__title
+    text-align: start
+    font-size: 36px
+    padding-left: 70px
+    margin-bottom: 30px
+  &__content-one
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    margin-bottom: 40px
+  &__content-two
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+  &__image
+    width: 400px
+  &__text
+    font-size: 26px
+    max-width: 500px
+
+.footer__title
+  margin-bottom: 20px
+
+.list-unstyled
+  margin-bottom: 10px
+
+.title__tur
+  font-weight: 400
+  font-size: 2.75rem
+  line-height: 120%
+  margin-bottom: 20px
+
+.title_descr
+  font-size: 1.25rem
+  line-height: 120%
+  line-height: 140%
+  margin-bottom: 20px
+
+.container__cards
+  display: flex
+  justify-content: space-around
+.card
+  padding: 0
+  &-body
+    span
+  &:hover
+    cursor: pointer
+  img
+    width: 100%
+    height: 200px
+  &-text
+    font-weight: 600
+    font-size: 1.25rem
+    line-height: 120%
+    line-height: 140%
+    color: #909198
+    text-align: center
+    margin-bottom: 20px
+    text-decoration: none
+    &:hover
+      color: #F33030
+      transition: all .3s ease
+
+.btns_wrap
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-top: 2.5rem
+  margin-bottom: 40px
+
+.tours_btn
+  border: 1px solid #3E4454
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 10px
+  text-align: center
+  line-height: 120%
+  width: 400px
+  font-size: 20px
+  color: #3E4454
+  transition: all .3s ease
+  height: 3.75rem
+  text-decoration: none
+.tours-cart__item:hover
+  cursor: pointer
+.cart_btn
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #F33030
+  color: white
+  font-size: 20px
+  line-height: 130%
+  padding: 10px
+  transition: all .3s ease
+  height: 3.75rem
+  text-decoration: none
+
+.content-text > p
+  padding-bottom: 0px !important
+  font-size: 1.25rem
+  line-height: 120%
+  padding-bottom: 1.5625rem
+  line-height: 140%
+  margin-bottom: 20px
+
+.content-text > h4
+  font-weight: 400
+  font-size: 30px
+  line-height: 127%
+  margin-bottom: 20px
+
+.content-text > ul
+  padding-left: 40px
+  margin-bottom: 20px
+
+.content-text ul > li
+  font-size: 1.25rem
+  line-height: 120%
+  padding-bottom: 5px
+  list-style-type: disc
+
+.col-6
+  -webkit-box-flex: 0
+  -webkit-flex: 0 0 50%
+  -ms-flex: 0 0 50%
+  flex: 0 0 50%
+  max-width: 50%
+
+.top-main__title
+  font-size: 36px
+  margin-top: 2.7778rem
+  text-align: center
+  margin-bottom: 20px
+
+.top-main__introtext
+  text-align: center
+  margin-bottom: 20px
+
+.tours-cart__item
+  background: #f7efef
+  -webkit-border-radius: 4px
+  border-radius: 8px
+  -webkit-transition: all 0.3s ease
+  -o-transition: all 0.3s ease
+  transition: all 0.3s ease
+  margin-bottom: 40px
+
+.tours-cart__img-wrap
+  border-radius: 4px
+  margin-bottom: 20px
+  max-height: 170px
+  overflow: hidden
+  width: 100%
+
+.tours-cart__img
+  max-width: 100%
+  width: 100%
+
+.tours-cart__info
+  padding-right: 1.2222rem
+  padding-left: 1.2222rem
+  padding-bottom: 1.5556rem
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
+  flex-direction: column
+  -webkit-box-pack: justify
+  -webkit-justify-content: space-between
+  -ms-flex-pack: justify
+  justify-content: space-between
+
+.tours-cart__title
+  font-size: 18px
+  line-height: 23px
+  margin-top: 25px
+  color: black
+  display: inline-block
+  text-decoration: none
+
+.tours-cart__text
+  font-size: 15px
+  line-height: 149.49%
+  margin-top: 30px
+
+.tours-cart__price
+  font-size: 18px
+  line-height: 149.49%
+  margin-top: 25px
+
+.cards-box
+  display: flex
+  justify-content: space-evenly
+
+.tour_item
+  display: flex
+  flex-direction: column
+  border: 1px solid #BDC3D3
+  transition: all .3s ease
+  position: relative
+  text-decoration: none
+  overflow: hidden
+
+.tour_item_img
+  width: 250px
+  background: #bdc3d37e
+  display: flex
+  align-items: center
+  justify-content: center
+
+.tour_item_info
+  flex-grow: 1
+  padding: 20px 30px 30px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.tour_item_info p
+  font-family: 'Roboto Condensed'
+  font-style: normal
+  font-size: 1.875rem
+  line-height: 2.375rem
+  text-align: center
+  margin-bottom: 1.875rem
+  color: #3E4454
+  transition: all .3s ease
+
+.white_btn
+  text-decoration: none
+  margin-top: 1rem
+  background: white
+  width: 100%
+  font-size: 16px
+  line-height: 1.5rem
+  padding-top: 0.8125rem
+  padding-bottom: 1rem
+  text-align: center
+  display: inline-block
+  color: #F33030
+  border: 1px solid #F33030
+  transition: all .3s ease
+  cursor: pointer
+  &:hover
+    background: #F33030
+    color: white
+
+.main__h1
+  font-weight: 300
+  font-size: 3.3rem
+  line-height: 100%
+  margin-bottom: 3.6rem
+
+.main__h2
+  text-align: left
+  margin-bottom: 3.3rem
+  margin-top: 2.2rem
+  font-size: 2.1rem
+  line-height: 120%
+
+.main__btn-wrap
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  margin-bottom: 50px
+
+.main__first-btn
+  margin-right: 15px
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  border: 1px solid transparent
+
+  position: relative
+  text-decoration: none
+  padding: 15px 20px
+  background-color: #0E76BC
+  -webkit-border-radius: 2px
+  border-radius: 2px
+  color: #ffffff
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  border: none
+  outline: none
+  -webkit-transition: all .3s ease
+  -o-transition: all .3s ease
+  transition: all .3s ease
+  font-size: 18px
+  line-height: 23px
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+  text-align: center
+  -webkit-transition: all 0.5s ease
+  -o-transition: all 0.5s ease
+  transition: all 0.5s ease
+
+.main__last-btn
+  border: 1px solid #0E76BC
+  background: none
+  color: #0E76BC
+  display: flex
+  justify-content: center
+  align-items: center
+
+.main__detail-text li:not(:last-child)
+  margin-bottom: 20px
+
+.main__detail-text li
+  font-size: 20px
+  margin-left: 35px
+  position: relative
+
+.main__span
+  margin-bottom: 20px
+  
+.main__title
+  font-size: 27px
+  color: #0E76BC
+
+.main__detail-text ul
+  margin-bottom: 20px
+
+.image
+  width: 500px
+
+.main__detail-text p
+  font-size: 24px
+  margin-bottom: 20px
